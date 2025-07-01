@@ -24,11 +24,14 @@ const app = express();
 configureServer(app);
 
 // Middlewares base
-app.use(cors({
-  origin: 'https://frontCarbarPart.onrender.com', // URL de tu frontend
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-}));
+// Configura CORS para producción/desarrollo
+const corsOptions = {
+  origin: process.env.NODE_ENV === 'production' 
+    ? 'https://tu-frontend.onrender.com' 
+    : 'http://localhost:5173',
+  credentials: true
+};
+app.use(cors(corsOptions));
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 
