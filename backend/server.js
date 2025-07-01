@@ -27,7 +27,7 @@ configureServer(app);
 // Configura CORS para producción/desarrollo
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production' 
-    ? 'https://frontCarbarPart.onrender.com' 
+    ? 'https://frontcarbarpart.onrender.com' 
     : 'http://localhost:5173',
   credentials: true
 };
