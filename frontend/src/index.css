@@ -1,0 +1,39 @@
+body {
+  padding-top: 30px;
+  background-color: #f8f9fa;
+}
+
+.card {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Estilos para alineación de íconos en el navbar */
+.navbar .nav-link,
+.navbar .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar .dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+}
+
+/* Ajuste específico para el ícono de Mi Cuenta */
+.navbar .account-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Asegurar que todos los íconos tengan el mismo tamaño */
+.navbar .nav-icon {
+  font-size: 1rem;
+  line-height: 1;
+  vertical-align: middle;
+  margin-top: -2px;
+}

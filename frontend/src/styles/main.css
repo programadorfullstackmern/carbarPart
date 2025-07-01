@@ -1,0 +1,45 @@
+
+/* Estilos para el área de drop */
+.drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .drop-area.drag-active {
+    border-color: #0d6efd;
+    background-color: rgba(13, 110, 253, 0.1);
+  }
+  
+  .drop-area p {
+    margin-bottom: 0;
+  }
+  
+  
+  /* Estilos para las tarjetas de autos/piezas */
+  .card {
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  /* Estilos para formularios */
+  .form-label {
+    font-weight: 500;
+  }
+  
+  /* Estilos para la navegación */
+  .nav-link {
+    font-weight: 500;
+  }
+  
+  .nav-link.active {
+    font-weight: 600;
+  }
+  
